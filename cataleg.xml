@@ -1,1 +1,248 @@
-<cataleg></cataleg>
+<llibreria xml:lang="ca">
+    <informació moneda="EUR" ultimaActualització="29/09/2026">
+        <nom> &amp;Nextln </nom>
+        <adreça>
+            <població> Barcelona </població>
+            <codiPostal></codiPostal>
+            <carrer></carrer>
+        </adreça>
+    </informació>
+    <cataleg>
+        <!-- Explicar el codi dels productes-->
+        <llibre ISBN="8496863354" dataIncorporació="" estoc="">
+            <títol> El Príncep de la Boira </títol>
+            <preu> 12,95€ </preu>
+            <valoració> 4/5 </valoració>
+            <sinopsis> La nova llar dels Carver, que s'han mudat a la costa fugint de la ciutat i de la guerra, està envolta envoltada de misteri.
+                Encara es respira l'esperit de Jacob, el fill dels antics propietaris, que va morir ofegat. Les estranyes circumstàncies d'aquesta mort només es comencen a aclarir amb
+                l'aparició d'un diabòlic personatge: El Príncep de la Boira, capaç de concedir qualsevol desig a una persona; això sí, a un alt preu.
+            </sinopsis>
+            <categories>
+                <categoria> Misteri </categoria>
+                <categoria> Terror </categoria>
+                <categoria> Aventures </categoria>
+                <categoria> Juvenil </categoria>
+            </categories>
+            <especificacions>
+                <autor> Carlos Ruiz Zafón </autor>
+                <anyPublicacióOriginal> 2007 </anyPublicacióOriginal>
+                <editorial> Booket </editorial>
+                <pagines> 240 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8417420517" dataIncorporació="03/10/2026" estoc="">
+            <títol> 1984 </títol>
+            <preu> 10,50€ </preu>
+            <valoració> 4,5/5 </valoració>
+            <sinopsis> Escrita el 1949, centrada en un món postbèl·lic i ambientada en una societat totalitària i dictatorial,
+                reflexiona sobre conceptes encara vigents, la censura, la manipulació dels mitjans de comunicació i la falta de
+                llibertat individual en benefici d'un suposat interès comú. Són conceptes simbolitzats pel Gran Germà, aquell que tot
+                ho sap, tot ho veu i tot ho controla. Compromès amb la defensa de la llibertat i els valors socials i humanitaris, Orwell escriu, amb 1984,
+                una crítica ferotge al món que hem creat, on el protagonista, Winston Smith, intenta sobreviure i assolir la seva autonomia individual a través de l'amor,
+                la confiança en el pròxim i la fermesa en les pròpies creences. Tot un al·legat a la revolució, la recerca de la veritat i la reflexió crítica constant sobre el nostre món.
+            </sinopsis>
+            <categories>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Distopia </categoria>
+                <categoria> Ficció Política </categoria>
+            </categories>
+            <especificacions>
+                <autor> George Orwell </autor>
+                <anyPublicació> 1949 </anyPublicació>
+                <editorial> Labutxaca </editorial>
+                <pagines> 416 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="9788412363371" dataIncorporació="04/10/2026" estoc="">
+            <títol> Dune </títol>
+            <preu> 22,50€ </preu>
+            <valoració> 5/5 </valoració>
+            <sinopsis> Considerada com una de les millors obres de ciència-ficció de tots els temps. En un futur indefinit, l'imperialisme
+                i el feudalisme que governen el sistema estan a punt de ser escenari d'uns esdeveniments que canviaran el curs de la història.
+            </sinopsis>
+            <categories>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Aventures </categoria>
+                <categoria> Ficcó Política </categoria>
+            </categories>
+            <especificacions>
+                <autor> Frank Herbert </autor>
+                <anyPublicacióOriginal> 1942 </anyPublicacióOriginal>
+                <editorial> Duna Llibres </editorial>
+                <pagines> 768 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="9788499301488" dataIncorporació="04/10/2026" estoc="">
+            <títol> L'estrany </títol>
+            <preu> 9,45€ </preu>
+            <valoració> 4/5 </valoració>
+            <sinopsis> L'estrany és l'home indiferent, que viu al marge de la vida, deixant-se portar.
+                La rutina es perpetua maquinalment de dilluns a dissabte. Fins que torna a ser diumenge...
+                i aleshores potser et demanen per casar-te i no saps si vols, o bé et trobes una pistola a les mans, el sol t'encega
+                i el gallet cedeix suaument. S'ha d'arribar a una situació límit perquè un s'adoni que és viu i recuperi l'esperança
+                de sobreviure? </sinopsis>
+            <categories>
+                <categoria> Ficció criminal </categoria>
+            </categories>
+            <especificacions>
+                <autor> Albert Camus </autor>
+                <anyPublicacióOriginal> 1942 </anyPublicacióOriginal>
+                <editorial> Labutxaca </editorial>
+                <pagines> 160 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="849930186" dataIncorporació="04/10/2026" estoc="">
+            <títol> Fahrenheit 451 </títol>
+            <preu> 10,95€ </preu>
+            <valoració> 4,3/5 </valoració>
+            <sinopsis> Guy Montag és bomber en un futur imaginari en el que aquests professionals tenen la missió de cremar els llibres, i perseguir aquells que els llegeixen.
+                Aquest és el punt de partida de Fahrenheit 451, una de les novel·les més cèlebres de la ciència-ficció i que, juntament amb 1984 de George Orwell i Un món feliç
+                d'Aldous Huxley, descriu una civilització occidental esclavitzada per la tecnologia, els tranquil·litzants i el conformisme social. Fahrenheit 451 és molt més que
+                una faula sobre un futur aparentment feliç i despreocupat, però gris i sotmès per l'estupidesa humana, aborda temes d'un interès cabdal com ho són el poder, la
+                censura i la importància de la literatura i de la força de la paraula com elements vertebradors del pensament i la responsabilitat social davant de la manipulació
+                dels governants. </sinopsis>
+            <categories>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Ficció distopica </categoria>
+            </categories>
+            <especificacions>
+                <autor> Ray Bradbury </autor>
+                <anyPublicacióOriginal> 1953 </anyPublicacióOriginal>
+                <editorial> Labutxaca </editorial>
+                <pagines> 208 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="9788496694644" dataIncorporació="" estoc="">
+            <títol> Cent anys de solitud </títol>
+            <preu> 11,00€ </preu>
+            <valoració> 3,8/5 </valoració>
+            <categories>
+                <categoria> Ficció </categoria>
+                <categoria> Saga Familiar </categoria>
+            </categories>
+            <sinopsis> Molts anys més tard, davant l'escamot d'afusellament, el coronel Aureliano Buendía s'hauria de recordar d'aquella remota tarda
+                que el seu pare l'havia dut a conèixer el gel </sinopsis>
+            <especificacions>
+                <autor> Gabriel García Márquez </autor>
+                <anyPublicacióOriginal> 1967 </anyPublicacióOriginal>
+                <editorial> BELACQVA </editorial>
+                <pagines> 427 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8417423842" dataIncorporació="" estoc="">
+            <títol> El nom de la rosa </títol>
+            <preu> 13,05€ </preu>
+            <valoració> 3,2/5 </valoració>
+            <sinopsis> Darrera setmana de novembre del 1327. Una abadia benedictina de la Itàlia septentrional. Fra Guillem de Baskerville i el
+                seu ajudant, Adso de Melk, cronista pòstum dels fets, investiguen tot un seguit de crims enmig d'una singular querella filosòfico-teològica.  </sinopsis>
+            <categories>
+                <categoria> Novela Històrica </categoria>
+                <categoria> Misteri </categoria>
+                <categoria> Novela detectivesca </categoria>
+                <categoria> Ficció </categoria>
+            </categories>
+            <especificacions>
+                <autor> Umberto Eco </autor>
+                <anyPublicacióOriginal> 1980 </anyPublicacióOriginal>
+                <editorial> Labutxaca </editorial>
+                <pagines> 704 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8412683250" dataIncorporació="" estoc="">
+            <títol> El problema dels tres cosos </títol>
+            <preu> 21,00€ </preu>
+            <valoració> 3,0/5 </valoració>
+            <categories>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Misteri </categoria>
+                <categoria> Drama històric </categoria>
+            </categories>
+            <sinopsis> Xina, 1967. Un projecte militar secret envia senyals a l’espai per contactar amb extraterrestres. Aviat, una civilització alienígena
+                a prop de l’extinció capta el senyal i comença a planificar el seu desembarcament a la Terra. Durant les dècades següents, es comunica amb la
+                humanitat a través d’un insòlit mètode: un estrany videojoc esquitxat de continguts històrics i filosòfics. A mesura que els alienígenes comencen
+                a guanyar als jugadors terrícoles, es formen diferents bàndols, uns disposats a donar la benvinguda a aquells éssers superiors i ajudar-los a fer-se
+                càrrec del seu món corrupte, i d’altres preparats per lluitar contra la invasió. </sinopsis>
+            <especificacions>
+                <autor> Cixin Liu </autor>
+                <anyPublicacióOriginal> 2006 </anyPublicacióOriginal>
+                <editorial> Duna Llibres </editorial>
+                <pagines> 480 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8416661383" dataIncorporació="" estoc="">
+            <títol> La història interminable </títol>
+            <preu> 16,49€ </preu>
+            <valoració> 4,0/5 </valoració>
+            <sinopsis> L'Emperadriu Infantil està malalta de mort i el seu regne corre un greu perill. La salvació depèn d'Atreiu, un valent guerrer de la tribu
+                dels pells verdes, i de Bastian, un nen tímid que llegeix amb passió un llibre màgic. Mil aventures els portaran a reunir-se i a conèixer una
+                fabulosa galeria de personatges, i junts donaran forma a una de les grans creacions de la literatura de tots els temps.</sinopsis>
+            <categories>
+                <categoria> Infantil </categoria>
+                <categoria> Fantasia </categoria>
+                <categoria> Rondalla </categoria>
+                <categoria> Aventures </categoria>
+            </categories>
+            <especificacions>
+                <autor> Michael Ende </autor>
+                <anyPublicacióOriginal> 1979 </anyPublicacióOriginal>
+                <editorial> Grup Promotor, S.L. </editorial>
+                <pagines> 592 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="9788416600939" dataIncorporació="" estoc="">
+            <títol> Frankenstein  </títol>
+            <preu> 10,49€ </preu>
+            <valoració> 5/5 </valoració>
+            <sinopsis> Un doctor, impulsat per la passió científica, dóna vida a un ésser deforme. El monstre és, en principi, una criatura tendra i generosa,
+                però el rebuig el transforma i comença a omplir de desgràcies la vida del seu creador. Frankenstein és una història plena d'horror i de misteri,
+                de generositat i de tendresa, a cavall de la novel·la gòtica i el relat filosòfic. </sinopsis>
+            <categories>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Gòtica </categoria>
+                <categoria> Romanticisme </categoria>
+            </categories>
+            <especificacions>
+                <autor> Mary Shelley </autor>
+                <anyPublicacióOriginal> 1818 </anyPublicacióOriginal>
+                <editorial> Labutxaca </editorial>
+                <pagines> 300 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8418196580" dataIncorporació="" estoc="">
+            <títol> El hòbbit </títol>
+            <preu> 10,50€ </preu>
+            <valoració> 5/5 </valoració>
+            <sinopsis> Situada l'any 2941 de la Tercera Edat del Sol, la història del hòbbit Bilbo arrenca amb la recerca d´un tresor.  </sinopsis>
+            <categories>
+                <categoria> Fantasia </categoria>
+                <categoria> Épic </categoria>
+                <categoria> Juvenil </categoria>
+                <categoria> Aventures </categoria>
+            </categories>
+            <especificacions>
+                <autor> GabrielJ. R. R. Tolkien </autor>
+                <anyPublicacióOriginal> 1937 </anyPublicacióOriginal>
+                <editorial> Penguin Butxaca </editorial>
+                <pagines> 344 </pagines>
+            </especificacions>
+        </llibre>
+        <llibre ISBN="8499303323" dataIncorporació="" estoc="">
+            <títol> Els Jocs de la Fam </títol>
+            <preu> 11,95€ </preu>
+            <valoració> 5,0/5 </valoració>
+            <sinopsis> Vint-i-quatre adolescents forçats a jugar. Només un guanyador. Els Jocs de la Fam han començat.... </sinopsis>
+            <categories>
+                <categoria> Distopia </categoria>
+                <categoria> Ciència Ficció </categoria>
+                <categoria> Juvenil </categoria>
+                <categoria> Aventures</categoria>
+            </categories>
+            <especificacions>
+                <autor> GabrielSuzanne Collins </autor>
+                <anyPublicacióOriginal> 2008 </anyPublicacióOriginal>
+                <editorial> Labutxaca </editorial>
+                <pagines> 400 </pagines>
+            </especificacions>
+        </llibre>
+    </cataleg>
+</llibreria>

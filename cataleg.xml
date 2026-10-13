@@ -3,6 +3,7 @@
 <!-- llibreria.dtd-->
 <!DOCTYPE llibreria[
     <!ELEMENT llibreria (informació, cataleg)>
+    <!-- Atribut d'idioma -->
     <!ATTLIST llibreria xml:lang NMTOKEN #FIXED "ca">
     <!ELEMENT informació (nom, adreça)>
     <!ATTLIST informació moneda (EUR | USD | GBP | JPY) #REQUIRED>
@@ -11,8 +12,8 @@
     <!ELEMENT població (#PCDATA)>
     <!ELEMENT codiPostal (#PCDATA)>
     <!ELEMENT carrer (#PCDATA)>
-    <!ATTLIST cataleg ultimaActualització CDATA #IMPLIED>
     <!ELEMENT cataleg (llibre*)>
+    <!ATTLIST cataleg ultimaActualització CDATA #IMPLIED>
     <!ELEMENT llibre (títol, preu, valoració?, sinopsis, categories, especificacions, altresLlibres)>
     <!ATTLIST llibre
         codi ID #REQUIRED
@@ -36,12 +37,13 @@
         anterior IDREF #IMPLIED
         següent IDREF #IMPLIED
     >
+    <!ENTITY moneda "EUR">
     
 ]>
 
 <!-- llibreria.xml -->
 <llibreria xml:lang="ca">
-    <informació moneda="EUR">
+    <informació moneda="&moneda;">
         <!-- El nom de la llibreria conté el caràcter &, representat amb &amp; -->
         <nom> &amp;Nextln </nom>
         <adreça>
@@ -50,7 +52,7 @@
             <carrer> Carrer del Rosselló </carrer>
         </adreça>
     </informació>
-    <cataleg ultimaActualització="10/10/2026">
+    <cataleg ultimaActualització="13/10/2026">
         <!-- Cada llibre té asignat com a identificador l'ISBN, un codi propi de cada llibre que no es repeteix. -->
         <llibre codi="ART-01" ISBN="8496863354" dataIncorporació="02/10/2026" estoc="10">
             <títol> El Príncep de la Boira </títol>
@@ -137,9 +139,9 @@
                 <editorial> Labutxaca </editorial>
                 <pagines> 160 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-02" següent="ART-04"/>
+            <altresLlibres anterior="ART-03" següent="ART-05"/>
         </llibre>
-        <llibre codi="ART-04" ISBN="849930186" dataIncorporació="04/10/2026" estoc="40">
+        <llibre codi="ART-05" ISBN="849930186" dataIncorporació="04/10/2026" estoc="40">
             <títol> Fahrenheit 451 </títol>
             <preu> 10.95 </preu>
             <valoració> 4.3 </valoració>
@@ -159,9 +161,9 @@
                 <editorial> Labutxaca </editorial>
                 <pagines> 208 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-03" següent="ART-05"/>
+            <altresLlibres anterior="ART-04" següent="ART-06"/>
         </llibre>
-        <llibre codi="ART-05" ISBN="9788496694644" dataIncorporació="04/10/2026" estoc="22">
+        <llibre codi="ART-06" ISBN="9788496694644" dataIncorporació="04/10/2026" estoc="22">
             <títol> Cent anys de solitud </títol>
             <preu> 11.00 </preu>
             <valoració> 3.8 </valoració>
@@ -177,9 +179,9 @@
                 <editorial> BELACQVA </editorial>
                 <pagines> 427 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-05" següent="ART-06"/>
+            <altresLlibres anterior="ART-05" següent="ART-07"/>
         </llibre>
-        <llibre codi="ART-06" ISBN="8417423842" dataIncorporació="04/10/2026" estoc="32">
+        <llibre codi="ART-07" ISBN="8417423842" dataIncorporació="04/10/2026" estoc="32">
             <títol> El nom de la rosa </títol>
             <preu> 13.05 </preu>
             <valoració> 3.2 </valoració>
@@ -197,9 +199,9 @@
                 <editorial> Labutxaca </editorial>
                 <pagines> 704 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-05" següent="ART-07"/>
+            <altresLlibres anterior="ART-06" següent="ART-08"/>
         </llibre>
-        <llibre codi="ART-07" ISBN="8412683250" dataIncorporació="04/10/2026" estoc="14">
+        <llibre codi="ART-08" ISBN="8412683250" dataIncorporació="04/10/2026" estoc="14">
             <títol> El problema dels tres cosos </títol>
             <preu> 21.00 </preu>
             <valoració> 3.0 </valoració>
@@ -219,9 +221,9 @@
                 <editorial> Duna Llibres </editorial>
                 <pagines> 480 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-06" següent="ART-08"/>
+            <altresLlibres anterior="ART-07" següent="ART-09"/>
         </llibre>
-        <llibre codi="ART-08" ISBN="8416661383" dataIncorporació="04/10/2026" estoc="12">
+        <llibre codi="ART-09" ISBN="8416661383" dataIncorporació="04/10/2026" estoc="12">
             <títol> La història interminable </títol>
             <preu> 16.49 </preu>
             <valoració> 4.0 </valoració>
@@ -240,9 +242,9 @@
                 <editorial> Grup Promotor, S.L. </editorial>
                 <pagines> 592 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-07" següent="ART-09"/>
+            <altresLlibres anterior="ART-08" següent="ART-10"/>
         </llibre>
-        <llibre codi="ART-09" ISBN="9788416600939" dataIncorporació="04/10/2026" estoc="54">
+        <llibre codi="ART-10" ISBN="9788416600939" dataIncorporació="04/10/2026" estoc="54">
             <títol> Frankenstein  </títol>
             <preu> 10.49 </preu>
             <valoració> 5.0 </valoració>
@@ -260,9 +262,9 @@
                 <editorial> Labutxaca </editorial>
                 <pagines> 300 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-09" següent="ART-10"/>
+            <altresLlibres anterior="ART-09" següent="ART-11"/>
         </llibre>
-        <llibre codi="ART-10" ISBN="8418196580" dataIncorporació="04/10/2026" estoc="34">
+        <llibre codi="ART-11" ISBN="8418196580" dataIncorporació="04/10/2026" estoc="34">
             <títol> El hòbbit </títol>
             <preu> 10.50 </preu>
             <valoració> 5.0 </valoració>
@@ -279,9 +281,9 @@
                 <editorial> Penguin Butxaca </editorial>
                 <pagines> 344 </pagines>
             </especificacions>
-            <altresLlibres anterior="ART-10" següent="ART-11"/>
+            <altresLlibres anterior="ART-10" següent="ART-12"/>
         </llibre>
-        <llibre codi="ART-11" ISBN="8499303323" dataIncorporació="04/10/2026" estoc="43">
+        <llibre codi="ART-12" ISBN="8499303323" dataIncorporació="04/10/2026" estoc="43">
             <títol> Els Jocs de la Fam </títol>
             <preu> 11.95 </preu>
             <valoració> 5.0 </valoració>

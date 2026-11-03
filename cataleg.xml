@@ -3,8 +3,7 @@
 <!-- llibreria.dtd-->
 <!DOCTYPE llibreria[
     <!ELEMENT llibreria (informació, cataleg)>
-    <!-- Atribut d'idioma -->
-    <!ATTLIST llibreria xml:lang NMTOKEN #FIXED "ca">
+    <!ATTLIST llibreria xml:lang NMTOKEN #FIXED "ca"> <!-- Atribut d'idioma -->
     <!ELEMENT informació (nom, adreça)>
     <!ATTLIST informació moneda (EUR | USD | GBP | JPY) #REQUIRED>
     <!ELEMENT nom (#PCDATA)>

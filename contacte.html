@@ -2,24 +2,130 @@
 <html lang="ca">
     <head>
         <meta charset="UTF-8">
-        <title>&amp;nextln</title>
+        <title>Contacte</title>
         <meta name="description" content="Pàgina web d'una llibreria">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Enllacços-->
         <link rel="icon" type="image/gift" href="#">
-        <link rel="stylsheet" type="text/css" href="#">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header>
-            <div class="logo"> <a href="index.html">&amp;nextln</a></div>
             <nav>
                 <ul>
-                    <li><a href="#">Catàleg</a></li>
-                    <li><a href="#">Informacó</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                    <li><a class="logo" href="index.html">&amp;nextln</a></li>
                 </ul>
             </nav>
-            
         </header>
+        <main>
+            <h1>Formulari de contacte</h1>
+            <p>Vols contactar amb nosaltres? Omple aquest qüestionari i et respondrem de seguida.</p>
+            <form action="#" method="post">
+            <label for="nom">Nom</label>
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Ex: Maria"
+                required
+            >
+            <label for="cognoms">Cognoms</label>
+            <input
+                type="text"
+                id="cognoms"
+                name="cognoms"
+                placeholder="Ex: Garcia Marin"
+                required
+            >
+            <label for="correu">Correu electrònic</label>
+            <input
+                type="email"
+                id="correu"
+                name="correu"
+                placeholder="nom@exemple.com"
+                required
+            >
+            <label for="telefon">Telèfon de contacte</label>
+            <input
+                type="text"
+                id="telefon"
+                name="telefon"
+                placeholder="123 456 789"
+                required
+            >
+            <label for="motiu">Motiu de la consulta</label>
+            <select id="motiu" name="motiu" required>
+                <option value="" disabled selected>Selecciona una opció...</option>
+                <option value="informacio">Petició d'informació</option>
+                <option value="suport">Suport tècnic</option>
+                <option value="pressupost">Error a la pàgina</option>
+                <option value="altres">Altres</option>
+            </select>
+            <legend>Com prefereixes que et contactem?</legend>
+            <input
+                type="radio"
+                id="correu"
+                name="contacte"
+                value="correu"
+            >
+            <label for="correu">Correu electrònic</label>
+            <input
+                type="radio"
+                id="telefon"
+                name="contacte"
+                value="telefon"
+            >
+            <label for="telefon">Telèfon</label>
+            <input
+                type="radio"
+                id="whatsapp"
+                name="contacte"
+                value="whatsapp"
+            >
+            <label for="whatsapp">WhatsApp</label>
+            <label for="missatge">Missatge</label>
+            <textarea
+                id="missatge"
+                name="missatge"
+                rows="5"
+                cols="50"
+                placeholder="Escriu el teu missatge aqí..."
+                required
+            ></textarea>
+            <input
+                type="checkbox"
+                id="politica"
+                name="politica"
+                value="accepto"
+                required
+            >
+            <label for"politica">Acepto la <a href="#" target="_blank">política de privacitat</a></label>
+            <input
+                type="submit"
+                id="enviar"
+                name="enviar"
+                value="Enviar Missatge"
+            >
+            <input
+                type="reset"
+                id="neteja"
+                name="neteja"
+                value="Netejar"
+            >
+        </main>
+        <footer>
+            <a href="#">
+                <section class="adreca">
+                    <img src="#">
+                    <div>
+                        <p>Carrer del Rosselló,</p>
+                        <p>Barcelona, 08025</p>
+                    </div>
+                </section>
+            </a>
+            <p>© 2026 &amp;nextln. Tots els drets reservats.</p>
+        </footer>
     </body>
 </html>

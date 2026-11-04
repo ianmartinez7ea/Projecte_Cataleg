@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #fafafa;
+    --secondary-color: #fafafa;
+
+    --primary-bg-color: #fafafa;
+    --secondary-bg-color: #fafafa;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* header */
+header nav ul{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+
+/* footer */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: .9rem;
+
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+
+}
+
+img {
+    width: 50%;
+}
+
+h4 {
+    margin: 0rem;
+}

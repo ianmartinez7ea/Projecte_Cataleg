@@ -1,135 +1,95 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
+   <head>
         <meta charset="UTF-8">
-        <title>&amp;nextln</title>
-        <link rel="icon" type="image/gif" href="#">
-        <meta name="author" content="Ian">
-        <meta name="description" content="Pàgina web d'una llibreria">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel="icon" type="image/gif" href="img/Ampersand.png">
+        <title>Catàleg | &amp;nextln</title>
+        <meta name="author" content="Ian">
+        <meta name="description" content="Catàleg de la llibreria.">
 
-        <!-- Enllacços-->
         <link rel="icon" type="image/gift" href="#">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="contacte.html">Contacte</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="portada">
-                <h1>&amp;nextln</h1>
-                <p>La teva llibreria</p>
-            </section>
-            <h2>Catàleg</h2>
-            <section class="cataleg">
-                <a href="fitxa.html">
-                    <article class="targetaLlibre">
-                        <img src="#">
-                        <h3>El Príncep de la Boira</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>1984</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>Dune</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>L'estrany</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>Fahrenheit 451</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>Cent anys de solitud</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>El nom de la rosa</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>El problema dels tres cosos</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>La història interminable</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>Frankenstein</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>El hòbbit</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-                <a href="fitxa.html">
-                    <article class="llibre">
-                        <img src="#">
-                        <h3>Els Jocs de la Fam</h3>
-                        <p>Sinopsis</p>
-                    </article>
-                </a>
-        <footer>
-            <section class="footer">
-                <img  src="#">
-                <section class="info">
-                    <h4>La nostra ubicació</h4>
-                    <a href="#">
-                        <p>Carrer del Rosselló,</p>
-                        <p>Barcelona, 08025</p>
-                    </a>
-                    <h4>Segeix-nos en le nostre xarxes</a></h4>
-                    <div class="xarxes">
-                        <a><img src="#"></a>
-                        <a><img src="#"></a>
-                        <a><img src="#"></a>
-                        <a><img src="#"></a>
+        <link rel="stylesheet" type="text/css" href="css/estils.css">
+
+        <script src="js/cataleg.js" defer></script>
+        <script src="js/index.js" defer></script>
+        <script src="js/tema.js" defer></script>
+   </head>
+   
+   <body>
+       <header>
+           <section class="portada">
+               <h1>&amp;nextln</h1>
+               <p>La teva llibreria</p>
+           </section>
+       </header>
+
+       <nav id="navegacio" class="navegacio">
+           <a class="logo" href="index.html">&amp;nextln</a>
+           <ul>
+               <li><a class="seleccionat" href="#cataleg">Catàleg</a></li>
+               <li><a href="contacte.html">Contacte</a></li>
+           </ul>
+       </nav>
+      
+       <main>
+           <section class="seccio-cataleg">
+               <h2 id="cataleg">Catàleg</h2>
+                <div class="cercador">
+                    <div>
+                        <label for="filtre-titol">Cercar per títol</label>
+                        <input
+                            class="cercador-titol"
+                            type="text"
+                            id="filtre-titol"
+                            name="filtre-titol"
+                            placeholder="Escriu el títol del llibre"
+                        >
                     </div>
-                </section>
-            </section>
-            <p>© 2026 &amp;nextln. Tots els drets reservats.</p>
-        </footer>
-    </body>
+                    <div>
+                        <label for="filtre">Cercar per títol</label>
+                        <input
+                            type="text"
+                            id="filtre"
+                            name="filtre"
+                            placeholder="Escriu el títol del llibre"
+                        >
+                    </div>
+                </div>
+
+               <div class="cataleg"></div>
+           </section>
+       </main>
+
+       <footer>
+            <div class="footer">
+                <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Gran+Via+de+les+Corts+Catalanes,+30,+Eixample,+08010+Barcelona"
+                    target="_blank"
+                >
+                    <img class="mapa" src="img/ubicacio.png" alt="Mapa">
+                </a>
+                <div class="info">
+                   <h2>La nostra ubicació</h2>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Gran+Via+de+les+Corts+Catalanes,+30,+Eixample,+08010+Barcelona"
+                        target="_blank"
+                    >
+                        Gran Via de les Corts Catalanes, 30,<br>
+                        Eixample, 08010, Barcelona.
+                    </a>
+
+                   <h3>Segeix-nos en le nostre xarxes</h3>
+                   <div class="xarxes">
+                        <a href="https://www.instagram.com" target="_blank"><img src="img/Instagram.png" alt="Logo d'Instagram"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="img/Facebook.png" alt="Logo de Facebook"></a>
+                        <a href="https://www.tiktok.com" target="_blank"><img src="img/TikTok.png" alt="Logo de TikTok"></a>
+                        <a href="https://x.com" target="_blank"><img src="img/X.jpg" alt="Logo de X"></a>
+                   </div>
+                </div>
+            </div>
+           <p>&copy; 2026 &amp;nextln. Tots els drets reservats.</p>
+       </footer>
+   </body>
 </html>

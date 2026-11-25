@@ -1,49 +1,542 @@
+/* === GENERAL === */
 :root {
-    --primary-color: #fafafa;
-    --secondary-color: #fafafa;
+   --primary-color: #312f2c;
+   --secondary-color: #444444;
 
-    --primary-bg-color: #fafafa;
-    --secondary-bg-color: #fafafa;
+   --primary-bg-color: #f0ede5;
+   --secondary-bg-color: #c5c2b0;
+
+   --accent-color: #565449;
+   --border-color: #6b6b6b;
 }
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   width: 100%;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  color: #333;
-  background-color: #fafafa;
-}
-
-/* header */
-header nav ul{
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-
-}
-
-/* footer */
-footer {
-  padding: 1.5rem;
-  text-align: center;
-  font-size: .9rem;
-
-}
-.footer {
-    display: flex;
-    flex-direction: row;
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 1rem;
-
+ font-family: 'Poppins', sans-serif;
+ margin: 0;
+ color: var(--primary-color);
+ background-color: var(--primary-bg-color);
 }
 
 img {
-    width: 50%;
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
 }
 
 h4 {
-    margin: 0rem;
+   margin: 0rem;
+}
+
+/* === PORTADA I NAVEGACIÓ === */
+.portada{
+   min-height: 100vh;
+   width: 100%;
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
+   background-color: var(--secondary-bg-color);
+}
+
+.portada h1{
+   margin-bottom: 0;
+   font-weight: 800;
+}
+
+.navegacio{
+   position: sticky;
+   top: 0;
+   z-index: 100;
+
+   width: 100%;
+   min-height: 4rem;
+   padding: 1rem;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: var(--secondary-bg-color);
+   border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+   font-size: 1.25rem;
+   font-weight: 800;
+}
+
+.navegacio ul{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 1rem;
+
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.navegacio a:hover {
+   color: var(--primary-bg-color);
+}
+
+.seleccionat {
+   font-weight: 700;
+}
+
+/* === CATÀLEG === */
+.seccio-cataleg{
+   max-width: 1500px;
+   margin: 0 auto auto auto;
+   padding: 5rem;
+}
+
+.seccio-cataleg h2 {
+   margin-bottom: 2rem;
+}
+
+.cataleg{
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   grid-auto-rows: 1fr;
+   gap: 2rem;
+   margin: 0;
+   align-items: stretch;
+}
+
+.targetaLlibre {
+   display: flex;
+   flex-direction: column;
+
+   height: 100%;
+   overflow: auto;
+   
+   padding: 1rem;
+   border: 1px solid;
+   border-radius: 1rem;
+}
+
+.cataleg img{
+   width: 100%;
+   aspect-ratio: 3/4;
+   object-fit: cover;
+   border-radius: 0.5rem;
+}
+
+.cataleg h3{
+   margin: 1rem 0 0.5rem;
+   padding-top: 0.75rem;
+   border-top: 1px solid var(--border-color);
+   min-height: 4.5rem;
+}
+
+.cataleg p{
+   margin: 0 0 0.5rem;
+   color: var(--secondary-color);
+}
+
+.targetaLlibre:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+/* Informació */
+.llibre{
+   max-width: 1200px;
+   margin: 5rem 10% 3rem;
+   padding: 0 0 4rem;
+
+   display: grid;
+   grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+   gap: 3rem;
+   align-items: start;
+  
+}
+
+.titol{
+   max-width: 1200px;
+   margin: 0;
+   padding: 0;
+
+   font-size: 3rem;
+   font-weight: 500;
+}
+
+
+.llibre img{
+   width: 80%;
+   max-height: 100%;
+   aspect-ratio: 3 / 4;
+   object-fit: cover;
+   border-radius: 1rem;
+   
+}
+
+.preu {
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+.categories {
+   display: flex;
+   flex-direction: row;
+
+   justify-content: start;
+   align-items: center;
+   gap: 1rem;
+   padding-top: 1rem;
+}
+
+.categories p {
+   margin-top: 0;
+   padding: 0.5rem;
+   border: 1px solid;
+   border-radius: 1rem;
+   background-color: var(--secondary-bg-color);
+
+   font-size: 0.65rem;
+}
+
+.sinopsis {
+   color: #444444;
+   line-height: 1.8;
+
+   text-align: justify;
+}
+
+table {
+   width: 85%;
+   border-collapse: separate;
+   border-spacing: 0.5rem;
+   margin: 0 5% 5rem 10%;
+}
+
+table caption {
+   text-align: left;
+   padding: 0 0 1rem 0;
+
+}
+
+table h2 {
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+table td, table thead th{
+   padding: 1rem;
+   border-bottom: 1px solid var(--border-color);
+   text-align: left;
+}
+
+table td:first-child, table th:first-child {
+   width: 40%;
+}
+
+.comprar {
+   display: block;
+   width: 100%;
+
+   margin: 2rem 0 0;
+   padding: 1rem;
+
+   color: var(--primary-bg-color);
+   background-color: var(--primary-color);
+   border: 1px solid var(--primary-color);
+   border-radius: 1rem;
+
+   text-align: center;
+   font-weight: 600;
+}
+
+.comprar:hover {
+   color: var(--primary-color);
+   background-color: var(--primary-bg-color);
+
+   font-weight: 600;
+}
+
+/* === FORMULARI DE CONTACTE === */
+.contacte {
+   max-width: 1000px;
+   margin: 0 auto auto auto;
+   padding: 3rem 2rem;
+}
+
+.intro-contacte {
+   margin-bottom: 3rem;
+}
+
+.intro-contacte h1 {
+   margin-bottom: 0.75rem;
+   font-weight: 600;
+}
+
+.intro-contacte p {
+   color: var(--secondary-color);
+}
+
+.formulari-contacte {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 1.5rem 2rem;
+}
+
+.camp {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   padding: 0;
+   min-width: 0;
+}
+
+.camp-complet {
+   grid-column: 1 / -1;
+}
+
+/* Camps */
+.camp label {
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+.camp input:not([type="checkbox"]):not([type="submit"]):not([type="reset"]),
+.camp select, .camp textarea {
+   display: block;
+   width: 100%;
+   min-width: 0;
+   padding: 0.85rem 1rem;
+
+   font: inherit;
+   color: var(--primary-color);
+   background-color: #faf9f6;
+
+   border: 1px solid var(--border-color);
+   border-radius: 8px;
+}
+
+.camp select option {
+   color: var(--primary-bg-color);
+   background-color: var(--primary-color);
+}
+
+.camp select optgroup:hover {
+   color: var(--primary-bg-color);
+   background-color: var(--primary-color);
+}
+
+.camp textarea {
+   resize: vertical;
+}
+
+.camp input:focus-visible, .camp select:focus-visible, .camp textarea:focus-visible {
+   outline: 2px solid var(--accent-color);
+}
+
+.politica {
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 0.5rem;
+}
+
+.politica input[type="checkbox"] {
+   width: 1rem;
+   height: 1rem;
+   margin: 0;
+   cursor: pointer;
+}
+
+.politica label {
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+.politica a {
+   text-decoration: underline;
+   text-underline-offset: 3px;
+}
+
+.politica a:hover {
+   color: var(--accent-color);
+}
+
+
+.boto-enviar {
+   width: 100%;
+   align-self: flex-start;
+   padding: 0.9rem 1.5rem;
+   
+   color: var(--primary-bg-color);
+   background-color: var(--primary-color);
+
+   border: 1px solid var(--primary-color);
+   border-radius: 1000px;
+
+   font: inherit;
+   cursor: pointer;
+}
+
+.boto-enviar:hover {
+   color: var(--primary-color);
+   background-color: var(--primary-bg-color);
+   font-weight: 600;
+}
+
+.boto-netejar {
+   align-items: flex-start;
+   padding: 0;
+   border: none;
+   background: none;
+
+   color: var(--secondary-color);
+   font: inherit;
+   font-size: 0.9rem;
+   text-decoration: underline;
+   text-underline-offset: 3px;
+
+   cursor: pointer;
+}
+
+.boto-netejar:hover {
+   color: var(--accent-color);
+   font-weight: 600;
+}
+
+/* === FOOTER === */
+footer {
+   margin: 3rem auto;
+   margin-bottom: 0;
+
+   color: var(--primary-bg-color);
+   font-size: 0.9rem;
+   background-color: var(--primary-color);
+}
+
+.footer {
+   width: 100%;
+   padding: 3rem;
+   padding-bottom: 0;
+   border-top: 1px solid var(--secondary-bg-color);
+
+   display: flex;
+   align-items: flex-start;
+   gap: 10%;
+}
+
+.mapa {
+   height: 100%;
+
+   border: 1px solid var(--primary-bg-color);
+}
+
+.info {
+   width: 40%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0.5rem;
+}
+
+.info h3 {
+   margin: 1rem 0 0.25rem;
+}
+
+.info p {
+   padding: 1rem;
+}
+
+.xarxes {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+
+   align-items: center;
+}
+
+.xarxes img {
+   width: 3rem;
+   height: 3rem;
+   object-fit: contain;
+   border-radius: 1rem;
+}
+
+footer > p {
+   margin: 2rem 0 0;
+   padding: 1rem;
+   text-align: center;
+   background-color: var(--primary-color);
+
+   color: var(--primary-bg-color);
+   font-weight: 700;
+}
+
+/* === DISSENY ADAPTABLE === */
+/* Tauletes */
+@media (max-width: 900px) {
+   .cataleg {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+
+   .seccio-cataleg {
+      padding: 4rem 2rem;
+   }
+
+   .llibre {
+      grid-template-columns: minmax(180px, 00.8fr) 1.2fr;
+      gap: 2rem;
+   }
+}
+
+/* Mòbils */
+@media (max-width: 600px) {
+   .cataleg {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+   }
+
+   .seccio-cataleg {
+      padding: 3rem;
+   }
+
+   .llibre {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+   }
+
+   .llibre img {
+      max-width: 320px;
+      margin: 0 auto;
+   }
+
+   .footer {
+      flex-direction: column;
+   }
+
+   .navegacio {
+      min-height: 4rem;
+   }
+
+   .navegacio ul {
+      gap: 0.75rem;
+   }
 }

@@ -2,75 +2,141 @@
 <html lang="ca">
     <head>
         <meta charset="UTF-8">
-        <title>Titol del llibre</title>
-        <meta name="description" content="Pàgina web d'una llibreria">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type="image/gif" href="#">
+        <title>El Príncep de la Boira | &amp;nextln</title>
+        <meta name="author" content="Ian">
+        <meta name="description" content="Informació del llibre El Príncep de la Boira">
 
-        <!-- Enllacços-->
-        <link rel="icon" type="image/gift" href="#">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/gift" href="img/Ampersand.png">
+        <link rel="stylesheet" type="text/css" href="css/estils.css">
+        
+        <script src="js/cataleg.js" defer></script>
+        <script src="js/fitxa.js" defer></script>
+        <script src="js/tema.js" defer></script>
     </head>
+
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="contacte.html">Contacte</a></li>
-                    <li><a class="logo" href="index.html">&amp;nextln</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1 class="títol">Títol del llibre</h1>
-            <section class="llibre">
-                <img src="#">
+        <nav class="navegacio">
+            <a class="logo" href="index.html">&amp;nextln</a>
+            <ul>
+                <li><a href="index.html#cataleg">Catàleg</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+
+        <main class="fitxa">
+            <!-- <div class="llibre">
+                <img src="img/fotoLlibre.jpg" alt="Portada llibre">
                 <article>
-                    <h2 class="preu">Preu del llibre</h2>
+                    <h1 class="titol">El Príncep de la Boira</h1>
                     <div class="categories">
-                        <p class="categoria">Categoria 1</p>
-                        <p class="categoria">Categoria 2</p>
-                        <p class="categoria">Categoria 3</p>
-                        <p class="categoria">Categoria 4</p>
+                        <p>Misteri</p>
+                        <p>Terror</p>
+                        <p>Aventures</p>
+                        <p>Juvenil</p>
                     </div>
-                    <p class="sinopsis">Sinopsis</p>
+                    <h2 class="preu">11.00 €</h2>
+                    <p class="valoracio">4.0/5.0 estrelles</p>
+                    <p class="sinopsis">
+                        La nova llar dels Carver, que s'han mudat a la costa fugint de la ciutat i de la guerra, està envoltada de misteri.
+                        Encara es respira l'esperit de Jacob, el fill dels antics propietaris, que va morir ofegat. Les estranyes circumstàncies d'aquesta mort només es comencen a aclarir amb
+                        l'aparició d'un diabòlic personatge: El Príncep de la Boira, capaç de concedir qualsevol desig a una persona; això sí, a un alt preu.
+                    </p>
+                    <a class="comprar" href="about:blanck" target="_blank">Comprar</a>
                 </article>
-            </section>
-            <h1>Fitxa tècnica</h1>
+            </div> -->
+           
             <table>
+                <caption><h2>Taula de preus</h2></caption>
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Preu</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
+                        <td>Tapa dura</td>
+                        <td>11.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Tapa tova</td>
+                        <td>8.50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Format digital</td>
+                        <td>5.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Edició conjunta: trilogia de la boira</td>
+                        <td>30.00 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Preu mitjà</td>
+                        <td>13,63 €</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <table>
+                <caption><h2>Fitxa tècnica</h2></caption>
+                <tbody>
+                    <tr> 
                         <td>Autor</td>
-                        <td>Nom de l'autor</td>
+                        <td>Carlos Ruiz Zafón</td>
                     </tr>
                     <tr>
                         <td>Títol original</td>
-                        <td>Títol d'exemple</td>
+                        <td>El príncipe de la niebla</td>
                     </tr>
                     <tr>
                         <td>Any de publicació</td>
-                        <td>Any de publicació</td>
+                        <td>1993</td>
                     </tr>
                     <tr>
                         <td>Editorial</td>
-                        <td>Nom de l'editorial</td>
+                        <td>Edebé</td>
                     </tr>
                     <tr>
                         <td>Nombre de pàgines</td>
-                        <td>Nombre de pàgines</td>
+                        <td>208</td>
                     </tr>
                 </tbody>
             </table>
         </main>
+       
         <footer>
-            <a href="#">
-                <section class="adreca">
-                    <img src="#">
-                    <div>
-                        <p>Carrer del Rosselló,</p>
-                        <p>Barcelona, 08025</p>
-                    </div>
-                </section>
-            </a>
-        </footer>
+            <div class="footer">
+                <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Gran+Via+de+les+Corts+Catalanes,+30,+Eixample,+08010+Barcelona"
+                    target="_blank"
+                >
+                    <img class="mapa" src="img/ubicacio.png" alt="Mapa">
+                </a>
+                <div class="info">
+                   <h2>La nostra ubicació</h2>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Gran+Via+de+les+Corts+Catalanes,+30,+Eixample,+08010+Barcelona"
+                        target="_blank"
+                    >
+                        Gran Via de les Corts Catalanes, 30,<br>
+                        Eixample, 08010, Barcelona.
+                    </a>
+
+                   <h3>Segeix-nos en le nostre xarxes</h3>
+                   <div class="xarxes">
+                        <a href="https://www.instagram.com" target="_blank"><img src="img/Instagram.png" alt="Logo d'Instagram"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="img/Facebook.png" alt="Logo de Facebook"></a>
+                        <a href="https://www.tiktok.com" target="_blank"><img src="img/TikTok.png" alt="Logo de TikTok"></a>
+                        <a href="https://x.com" target="_blank"><img src="img/X.jpg" alt="Logo de X"></a>
+                   </div>
+                </div>
+            </div>
+           <p>&copy; 2026 &amp;nextln. Tots els drets reservats.</p>
+       </footer>
     </body>
-    
 </html>
